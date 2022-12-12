@@ -73,7 +73,7 @@ void main()
 	printf("Enter the postfix expression :");
 	scanf("%s", exp);
 	convert(exp);
-	printf("\nThe Equivalant Infix expression is:");
+	printf("\nThe Equivalant Infix tree is:");
 	display(pop());
 	printf("\n\n");
 	getch();
