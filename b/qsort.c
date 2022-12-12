@@ -4,6 +4,16 @@ struct node {
     int data;
     struct node * next;
 };
+struct node * addnode(struct node * head,int data){
+    struct node * temp = (struct node *) malloc(sizeof(struct node));
+    temp->data = data;
+    temp->next = NULL;
+    if (head == NULL)
+        return temp;
+    struct node * next = head;
+    while (next->next !=NULL)
+        nex
+}
 int main(){
     struct node * head = NULL;
     int n,temp;
@@ -16,5 +26,5 @@ int main(){
             scanf("%d",&temp);
             head = addnode(head,temp);
     }
-    }while(n !=4)
+}while(n !=4);
 }
